@@ -1,59 +1,51 @@
 ---
-title: 'Images and embeds'
-description: 'Add image, video, and other HTML elements'
-icon: 'image'
+title: "Brand imagery"
+description: "Approved visuals and usage guidelines for Humyn content"
+icon: "image"
 ---
 
 <img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
+  src="/images/hero-dark.png"
+  alt="Humyn Studio hero illustration"
+  style={{ borderRadius: "1rem", marginBottom: "2rem", boxShadow: "0 24px 60px rgba(9, 9, 11, 0.25)" }}
 />
 
-## Image
+Humyn’s visual identity leans on calm gradients, rounded corners, and ample white space. Use the assets in this repository to keep every surface consistent across docs, marketing, and product training material.
 
-### Using Markdown
+## Available assets
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+- `/images/hero-light.png`: Primary hero for light backgrounds. Preferred for documentation and marketing landing pages.
+- `/images/hero-dark.png`: Alternate hero for dark or mixed backgrounds. Works well in slide decks.
+- `/images/checks-passed.png`: Product UI close-up highlighting moderation and approval states.
+- `/logo/light.svg` and `/logo/dark.svg`: Wordmark optimized for respective modes.
+
+<Callout>
+All image assets live in the `/images` and `/logo` directories. Keep filenames predictable; we reserve camelCase for UI exports and kebab-case for marketing composites.
+</Callout>
+
+## Usage guidelines
+
+1. **Respect padding.** Maintain at least 32px of whitespace around logos and hero art so the gradients stay clean.
+2. **Prefer local assets.** Host imagery from this repo to avoid regressions when third-party CDNs change URLs.
+3. **Optimize for size.** Keep PNGs under 500 KB. If an export exceeds that, re-run it through ImageOptim before committing.
+4. **Stick to the palette.** Primary blue `#2563EB`, accent sky `#60A5FA`, deep navy `#1E3A8A`, and the neutral slate background `#F5F8FF`. Do not introduce off-brand gradients.
+
+## Embedding in MDX
+
+Use the built-in Markdown syntax for simple screenshots, and drop down to JSX only when you need custom styling.
 
 ```md
-![title](/path/image.jpg)
+![Feedback Hub overview](/images/checks-passed.png)
 ```
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
-
-### Using embeds
-
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
-
-```html
-<img height="200" src="/path/image.jpg" />
+```jsx
+<img
+  src="/images/hero-light.png"
+  alt="Humyn Studio dashboard with highlighted insights"
+  style={{ borderRadius: "1rem" }}
+/>
 ```
-
-## Embeds and HTML elements
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
-
-<br />
 
 <Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
+Need something that isn’t here? Ping the design team in `#brand-lab` with your use case so we can ship a vetted asset instead of improvising.
 </Tip>
-
-### iFrames
-
-Loads another HTML page within the document. Most commonly used for embedding videos.
-
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
