@@ -11,51 +11,34 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
+        "tab": "Humyn Docs",
         "groups": [
           {
             "group": "Introduction",
-            "pages": ["introduction/what-is-humyn", "introduction/quickstart"]
-          },
-          {
-            "group": "Getting Started",
             "pages": [
-              "getting-started/creating-your-account",
-              "getting-started/creating-a-project",
-              "getting-started/adding-data-sources"
+              "introduction/what-is-humyn",
+              "introduction/quickstart",
+              "introduction/account-and-billing"
             ]
           },
           {
             "group": "Core Features",
             "pages": [
               "core-features/dashboard",
-              "core-features/feedback-hub",
-              "core-features/insights-swot",
-              "core-features/personas",
-              "core-features/idea-overview-score",
-              "core-features/ai-chat",
-              "core-features/themes-keywords"
+              "core-features/metrics",
+              "core-features/explore",
+              "core-features/chat-with-hue"
             ]
           },
           {
             "group": "Guides & Use Cases",
             "pages": [
-              "guides/validate-new-product-idea",
-              "guides/competitor-analysis-swot",
-              "guides/prioritize-feature-requests",
-              "guides/create-data-backed-personas"
+              "guides/use-cases",
+              "guides/activation-playbook",
+              "guides/adoption-strategies",
+              "guides/measurement-framework",
+              "guides/roadmap"
             ]
-          },
-          {
-            "group": "Account & Billing",
-            "pages": [
-              "account-billing/managing-subscription",
-              "account-billing/team-collaboration"
-            ]
-          },
-          {
-            "group": "FAQ",
-            "pages": ["faq/general-questions", "faq/troubleshooting"]
           }
         ]
       }
@@ -64,27 +47,49 @@
       "anchors": [
         {
           "anchor": "Website",
-          "href": "https://www.humyn.space",
+          "href": "https://humyn.space",
           "icon": "globe"
+        },
+        {
+          "anchor": "App",
+          "href": "https://app.humyn.studio",
+          "icon": "sparkles"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://discord.gg/bycbt28zpk",
+          "icon": "comments"
         }
       ]
     }
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://humyn.space"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
         "href": "mailto:hello@humyn.space?subject=Humyn%20Docs%20Support"
+      },
+      {
+        "label": "Website",
+        "href": "https://humyn.space",
+        "target": "_blank"
+      },
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/bycbt28zpk",
+        "target": "_blank"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Website",
-      "href": "https://www.humyn.space"
+      "label": "App",
+      "href": "https://app.humyn.studio",
+      "target": "_blank"
     }
   },
   "contextual": {
@@ -101,7 +106,8 @@
   },
   "footer": {
     "socials": {
-      "website": "https://www.humyn.space"
+      "website": "https://humyn.space",
+      "discord": "https://discord.gg/bycbt28zpk"
     }
   }
 }
