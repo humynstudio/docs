@@ -17,12 +17,14 @@
       font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
     }
 
+    html,
     body {
-      background: linear-gradient(135deg, rgba(248, 250, 255, 0.95), rgba(236, 244, 255, 0.95));
+      background: linear-gradient(135deg, rgba(248, 250, 255, 0.95), rgba(236, 244, 255, 0.95)) !important;
     }
 
+    html.dark,
     html.dark body {
-      background: linear-gradient(120deg, rgba(11, 17, 34, 0.96), rgba(2, 8, 23, 0.96));
+      background: linear-gradient(120deg, rgba(11, 17, 34, 0.96), rgba(2, 8, 23, 0.96)) !important;
     }
 
     body::before {
@@ -42,6 +44,11 @@
         radial-gradient(circle at 76% 82%, rgba(37, 99, 235, 0.26), transparent 58%);
     }
 
+    .DocsPage__Main,
+    .DocsLayout {
+      background: transparent !important;
+    }
+
     mark {
       background: rgba(250, 204, 21, 0.25);
       color: inherit;
@@ -57,3 +64,13 @@
     }
   `}
 </style>
+<script async src="https://tally.so/widgets/embed.js"></script>
+<script>
+  {`
+    window.addEventListener('load', function () {
+      if (typeof Tally !== 'undefined') {
+        Tally.loadEmbeds();
+      }
+    });
+  `}
+</script>
