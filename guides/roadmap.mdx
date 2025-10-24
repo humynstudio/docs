@@ -11,56 +11,58 @@ We build Humyn to uncover <mark>real community insight</mark> for builders, stra
 Timelines represent earliest release targets. We adjust as signal from customers, data quality, and compliance needs evolve.
 </Callout>
 
-<Columns cols={3}>
-  <Card title="High Priority" icon="bolt">
-    <Badge color="blue">Delivery window: Q4 2025</Badge>
-    <Divider />
-    <List>
-      <ListItem>
-        <strong>Export data from projects</strong><br />
-        <small>November 2025</small><br />
-        Allow teams to keep <mark>offline backups</mark> and feed Humyn output into BI tools.
-      </ListItem>
-      <ListItem>
-        <strong>Manual text input</strong><br />
-        <small>November 2025</small><br />
-        Add briefs, interview notes, or research summaries directly so Humyn can <mark>enrich custom data</mark>.
-      </ListItem>
-      <ListItem>
-        <strong>Pruning & staging before ingest</strong><br />
-        <small>December 2025</small><br />
-        Review, trim, and approve comments before they count toward usage limits—giving analysts <mark>precision control</mark>.
-      </ListItem>
-    </List>
-  </Card>
-  <Card title="Medium Priority" icon="chart-simple">
-    <Badge color="purple">Discovery: In progress</Badge>
-    <Divider />
-    <List>
-      <ListItem>
-        <strong>Expanded source support</strong><br />
-        <small>December 2026</small><br />
-        Add Twitter/X, interview transcripts, and customer research uploads to broaden <mark>multi-channel insight</mark>.
-      </ListItem>
-    </List>
-  </Card>
-  <Card title="Exploratory" icon="seedling">
-    <Badge color="slate">Backlog</Badge>
-    <Divider />
-    <List>
-      <ListItem>
-        <strong>Team collaboration</strong><br />
-        <small>2026</small><br />
-        Shared workspaces, permissions, and reviews so cross-functional teams co-create <mark>insight narratives</mark>.
-      </ListItem>
-      <ListItem>
-        <strong>Sandbox insight canvas</strong><br />
-        <small>2026</small><br />
-        Canvas-style environment for UX researchers to map quotes visually and build <mark>story-first presentations</mark>.
-      </ListItem>
-    </List>
-  </Card>
-</Columns>
+<section className="roadmap-board">
+  <div className="roadmap-column">
+    <h3>High Priority</h3>
+    <p className="roadmap-subtitle">Delivery window: Q4 2025</p>
+
+    <article className="roadmap-item">
+      <time>November 2025</time>
+      <strong>Export data from projects</strong>
+      <p>Enable <mark>offline backups</mark> and downstream analysis in BI tools or internal archives.</p>
+    </article>
+
+    <article className="roadmap-item">
+      <time>November 2025</time>
+      <strong>Manual text input</strong>
+      <p>Let teams add briefs, interview notes, and research summaries so Humyn can <mark>enrich bespoke data</mark>.</p>
+    </article>
+
+    <article className="roadmap-item">
+      <time>December 2025</time>
+      <strong>Pruning & staging before ingest</strong>
+      <p>Review, trim, and approve comments before they count toward usage limits—giving analysts <mark>precision control</mark>.</p>
+    </article>
+  </div>
+
+  <div className="roadmap-column">
+    <h3>Medium Priority</h3>
+    <p className="roadmap-subtitle">Discovery in progress</p>
+
+    <article className="roadmap-item">
+      <time>December 2026</time>
+      <strong>Expanded source support</strong>
+      <p>Add Twitter/X, interview transcripts, and customer research uploads for <mark>multi-channel intelligence</mark>.</p>
+    </article>
+  </div>
+
+  <div className="roadmap-column">
+    <h3>Exploratory</h3>
+    <p className="roadmap-subtitle">On the backlog</p>
+
+    <article className="roadmap-item">
+      <time>2026</time>
+      <strong>Team collaboration</strong>
+      <p>Shared workspaces, permissions, and review flows so cross-functional partners co-create <mark>insight narratives</mark>.</p>
+    </article>
+
+    <article className="roadmap-item">
+      <time>2026</time>
+      <strong>Sandbox insight canvas</strong>
+      <p>Canvas-style environment for UX researchers to map quotes visually and deliver <mark>story-first presentations</mark>.</p>
+    </article>
+  </div>
+</section>
 
 <img
   src="/assets/placeholder-frame.svg"
