@@ -78,7 +78,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hello@humyn.space?subject=Humyn%20Docs%20Support"
+        "href": "mailto:support@humyn.studio?subject=Humyn%20Docs%20Support"
       },
       {
         "label": "Website",
@@ -113,7 +113,13 @@
   "footer": {
     "socials": {
       "website": "https://humyn.space",
-      "discord": "https://discord.gg/bycbt28zpk"
+      "discord": "https://discord.gg/bycbt28zpk",
+      "instagram": "https://www.instagram.com/humynspace",
+      "twitter": "https://twitter.com/humynspace",
+      "tiktok": "https://www.tiktok.com/@humynspace",
+      "youtube": "https://www.youtube.com/@humynspace",
+      "linkedin": "https://www.linkedin.com/company/humynspace",
+      "threads": "https://www.threads.net/@humynspace"
     }
   }
 }
