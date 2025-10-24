@@ -17,19 +17,23 @@
       font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
     }
 
-    body {
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
       background:
-        radial-gradient(circle at 10% 15%, rgba(96, 165, 250, 0.18), transparent 55%),
-        radial-gradient(circle at 90% 85%, rgba(37, 99, 235, 0.14), transparent 60%),
-        #F8FAFF;
-      background-attachment: fixed;
+        radial-gradient(circle at 10% 15%, rgba(96, 165, 250, 0.17), transparent 58%),
+        radial-gradient(circle at 90% 85%, rgba(37, 99, 235, 0.14), transparent 62%),
+        linear-gradient(120deg, #F8FAFF 0%, #F2F6FF 100%);
+      z-index: -1;
     }
 
-    html.dark body {
+    html.dark body::before {
       background:
-        radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.24), transparent 55%),
-        radial-gradient(circle at 80% 80%, rgba(96, 165, 250, 0.16), transparent 60%),
-        #0B1120;
+        radial-gradient(circle at 15% 18%, rgba(96, 165, 250, 0.23), transparent 55%),
+        radial-gradient(circle at 82% 78%, rgba(37, 99, 235, 0.28), transparent 60%),
+        linear-gradient(135deg, #020817 0%, #0F172A 100%);
     }
 
     mark {
@@ -44,6 +48,8 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.75rem;
       margin-top: 2.5rem;
+      position: relative;
+      z-index: 0;
     }
 
     .roadmap-column {
@@ -56,6 +62,12 @@
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .roadmap-column:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 34px 80px rgba(15, 23, 42, 0.16);
     }
 
     html.dark .roadmap-column {
@@ -64,7 +76,8 @@
       box-shadow: 0 32px 80px rgba(2, 6, 23, 0.55);
     }
 
-    .roadmap-column h3 {
+    .roadmap-column h3,
+    .roadmap-column h2 {
       margin: 0;
       font-size: 1.05rem;
       letter-spacing: 0.08em;
@@ -95,6 +108,12 @@
       display: flex;
       flex-direction: column;
       gap: 0.45rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .roadmap-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
     }
 
     html.dark .roadmap-item {
@@ -125,6 +144,10 @@
       color: #E2E8F0;
     }
 
+    html.dark .roadmap-item strong {
+      color: #E2E8F0;
+    }
+
     .roadmap-item p {
       margin: 0;
       font-size: 0.95rem;
@@ -133,6 +156,20 @@
 
     html.dark .roadmap-item p {
       color: #C7D2FE;
+    }
+
+    @media (max-width: 768px) {
+      .roadmap-board {
+        gap: 1.25rem;
+      }
+
+      .roadmap-column {
+        padding: 1.4rem;
+      }
+
+      .roadmap-item {
+        padding: 1rem 1.1rem;
+      }
     }
 
     code,
