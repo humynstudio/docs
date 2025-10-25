@@ -16,7 +16,8 @@
           {
             "group": "Home",
             "pages": [
-              "index"
+              "index",
+              "home/roadmap"
             ]
           },
           {
@@ -42,8 +43,7 @@
               "guides/use-cases",
               "guides/activation-playbook",
               "guides/adoption-strategies",
-              "guides/measurement-framework",
-              "guides/roadmap"
+              "guides/measurement-framework"
             ]
           }
         ]
