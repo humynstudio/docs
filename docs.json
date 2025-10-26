@@ -31,6 +31,7 @@
             "group": "Core Features",
             "pages": [
               "core-features/dashboard",
+              "core-features/add-comments",
               "core-features/metrics",
               "core-features/explore",
               "core-features/chat-with-hue"
