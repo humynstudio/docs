@@ -9,12 +9,104 @@ description: "Ask natural-language questions and get instant answers from Humyn"
 
 Hue is your AI research partner. Instead of combing through dashboards, you can ask freeform questions and receive synthesized answers, quotes, and recommended next steps drawn from the latest community conversations.
 
-## Prompt ideas
+## Core prompt modes
 
-- “What are the biggest onboarding blockers founders mention this week?”  
-- “Give me three quotes I can use to position our research workflow feature.”  
-- “How do designers describe the ‘jobs to be done’ for AI productivity tools?”  
-- “Summarize objections to annual pricing from enterprise buyers.”  
+<Columns cols={2}>
+  <Card title="Tell me about my project" icon="lightbulb">
+    Ask Hue for a narrative recap of everything Humyn has ingested for your current project: key themes, sentiment shifts, and standout quotes.
+  </Card>
+  <Card title="Competitive opportunities" icon="trophy">
+    Compare how customers talk about you versus alternatives, spot gaps, and surface differentiators you can act on quickly.
+  </Card>
+  <Card title="Common pain points" icon="circle-exclamation">
+    Zero in on recurring frustrations, blockers, or unmet needs so product, design, and support teams can prioritize the right fixes.
+  </Card>
+  <Card title="Generate a persona" icon="users">
+    Hue will assemble a living persona using your project’s data—motivations, objections, rituals, and verbatim language pulled directly from community threads.
+  </Card>
+</Columns>
+
+## Prompt library by role
+
+### Product managers
+
+- “Summarize how our power users describe the core job-to-be-done in this project.”  
+- “What launch risks or blocker themes are trending upward this week?”  
+- “List the competitor features customers wish we matched—and why.”  
+- “Give me three quotes that justify prioritizing [feature] in the next sprint.”  
+
+### Product designers
+
+- “What sensory or emotional language do people use when they love or hate our workflow?”  
+- “Highlight onboarding moments that feel confusing or high effort.”  
+- “How do users visualize success with tools like ours—what metaphors do they lean on?”  
+- “Capture the accessibility or usability pain points appearing most often.”  
+
+### Investors & analysts
+
+- “What signals indicate growing enthusiasm vs. fatigue for this category?”  
+- “Compare how early adopters versus casual users frame our moat.”  
+- “Which adjacent products get cited as best-in-class, and for what reasons?”  
+- “Pull quotes that reveal purchase triggers or churn triggers.”  
+
+### General operators & storytellers
+
+- “How are community members talking about the broader cultural shift around this topic?”  
+- “What fresh ideas, frameworks, or jargon emerged this month?”  
+- “Draft a three-point recap I can paste into Slack for the leadership team.”  
+- “Turn today’s findings into a two-sentence TL;DR for stakeholders.”  
+
+## Cultural and behavioral deep-dive prompts
+
+Use these sets when you want to move beyond surface-level sentiment and understand the culture shaping your audience.
+
+### 🧠 Community psychology & identity
+
+- “Describe the unspoken values or identity traits this community seems to share. What does belonging mean here?”  
+- “What emotions drive engagement in this space — pride, anxiety, curiosity, rebellion, etc.?”  
+- “How do members define ‘expertise’ or ‘credibility’? What makes someone respected or dismissed?”  
+- “Summarize the archetypes that appear in this community — the mentor, skeptic, innovator, purist, etc.”  
+- “What recurring fears or insecurities show up in posts, even if not said outright?”  
+
+### 🔍 Behavior & rituals
+
+- “What daily or weekly habits define active members of this community?”  
+- “Identify moments of initiation or status signaling — what actions make someone a ‘real’ member?”  
+- “How does humor, sarcasm, or insider language build group cohesion here?”  
+- “What are the community’s ‘sacred’ topics versus taboo or overdone ones?”  
+- “How do members celebrate success, and how do they handle failure or mistakes?”  
+
+### 📈 Trend & sentiment dynamics
+
+- “What patterns of enthusiasm vs fatigue are emerging over time?”  
+- “Highlight new ideas, frameworks, or keywords gaining traction in the past 3 months.”  
+- “Which topics generate the most heated debate — and why?”  
+- “Detect shifts in tone or mood that might signal cultural or product fatigue.”  
+- “Who or what is being positioned as ‘the next big thing,’ and who’s skeptical of it?”  
+
+### 🗣️ Influence & discourse
+
+- “Map the informal leaders or hubs of influence in this space — who shapes what others think?”  
+- “Compare how top posters and casual members frame the same topics differently.”  
+- “What types of content (advice, critique, humor, data, story) earn the most credibility?”  
+- “Which users or subgroups challenge dominant opinions — and how does the community react?”  
+- “How does language evolve around influential moments or controversies?”  
+
+### 💬 Cultural signals & symbolism
+
+- “What symbols, memes, or metaphors repeatedly appear — and what do they represent culturally?”  
+- “How does this community’s slang reflect its worldview?”  
+- “What external trends (tech, politics, aesthetics) influence how people talk here?”  
+- “If this community were a person, what would their personality and worldview be?”  
+- “What aesthetic or visual markers show group belonging (colors, emojis, formatting, tone)?”  
+
+### 💡 Opportunity & insight extraction
+
+- “What unmet needs or frustrations appear frequently but without clear solutions?”  
+- “Which products, brands, or ideas are consistently mentioned with trust — or disdain?”  
+- “Identify hidden audience segments based on tone, motivation, or behavior.”  
+- “What ‘jobs-to-be-done’ language appears across discussions (phrases like ‘I wish I could…’ or ‘I struggle to…’)? ”  
+- “How might a new product or service naturally fit into this culture’s existing rituals?”  
 
 ## Anatomy of a response
 
@@ -28,9 +120,9 @@ Hue is your AI research partner. Instead of combing through dashboards, you can 
 ## Usage patterns
 
 - Prep for stakeholder meetings by gathering the freshest perspective on a topic.  
-- Draft release notes, enablement scripts, and content angles in minutes.  
+- Draft release notes, enablement scripts, personas, and content angles in minutes.  
 - Pressure-test ideas before you commit to a sprint or campaign.  
-- Build a searchable library of approved prompts new teammates can reuse.
+- Build a searchable library of approved prompts new teammates can reuse, organized by role in your internal wiki.
 
 ## Guardrails
 
