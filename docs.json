@@ -38,12 +38,11 @@
             ]
           },
           {
-            "group": "Guides & Use Cases",
+            "group": "Workflows",
             "pages": [
-              "guides/use-cases",
-              "guides/activation-playbook",
-              "guides/adoption-strategies",
-              "guides/measurement-framework"
+              "workflows/generic-use-case",
+              "workflows/product-managers",
+              "workflows/analysts"
             ]
           }
         ]
