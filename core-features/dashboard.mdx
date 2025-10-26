@@ -1,5 +1,5 @@
 ---
-title: "Dashboard"
+title: "Overview"
 description: "Command center for scanning Humyn signals at a glance"
 ---
 
@@ -9,9 +9,9 @@ description: "Command center for scanning Humyn signals at a glance"
   style={{ borderRadius: "1rem", marginBottom: "2rem", boxShadow: "0 28px 70px rgba(15, 23, 42, 0.18)" }}
 />
 
-## What the dashboard delivers
+## What the overview delivers
 
-The Dashboard is your living status page for community signal. Instead of hopping between Explore, exports, or Slack threads, every spike, sentiment shift, and winning quote meets you here.
+The Overview is your living status page for community signal. Instead of hopping between Explore, exports, or Slack threads, every spike, sentiment shift, and winning quote meets you here.
 
 <Columns cols={2}>
   <Card title="Know the pulse" icon="wave-pulse">
@@ -24,30 +24,12 @@ The Dashboard is your living status page for community signal. Instead of hoppin
 
 ## Tile anatomy
 
-| Tile | Use it to | Why it matters |
+| Tile | What it shows | Why it matters |
 | --- | --- | --- |
-| **Conversation Volume** | Validate the sample size behind your weekly readout. | Helps leaders see the dataset before they see the conclusion. |
-| **Theme Momentum** | Track which topics accelerated, cooled, or emerged from nowhere. | Perfect for setting sprint priorities or campaign pivots. |
-| **Signal Mix** | Balance praise, blockers, questions, and objections. | Highlights when sentiment flips before dashboards catch up. |
-| **Quote Highlights** | Pin context-rich statements for storytelling. | Keeps roadmaps, briefs, and decks anchored in verbatim voice. |
-
-## How to work the Dashboard
-
-1. **Filter with intent.** Narrow by project, persona, or time range so you’re evaluating the exact audience and period that matters.  
-2. **Save reusable views.** Create presets like `Weekly Product Sync`, `Investor Digest`, or `Launch Retro` so every team stays aligned.  
-3. **Export and embed.** Drop PNG snapshots into slides or export CSVs for deeper analysis in Sheets or BI tools.  
-4. **Schedule digests.** Set up email or Slack summaries to broadcast key shifts automatically.
-
-<Tip>
-Pair scheduled digests with a Slack channel like `#humyn-signal` so spikes never live in just one person’s head.
-</Tip>
-
-## Keep it trustworthy
-
-- **Assign an owner.** Pick someone to review tile accuracy weekly and tune filters as projects evolve.  
-- **Spot-check sentiment.** Open sample threads from Quote Highlights to confirm the tone classification still holds.  
-- **Retire clutter.** Archive views that no longer drive decisions so teams focus on what matters.  
-- **Document your taxonomy.** Define theme names and tags in your internal wiki so everyone speaks the same language.
+| **Comments ingested** | Count of fresh Reddit, Twitter, and YouTube comments Humyn processed for this project. | Confirms how much real conversation is backing the insights you’re about to share. |
+| **Latest insight** | The most recent highlight or theme promoted to the Overview from Explore. | Gives you the headline story to anchor stand-ups and stakeholder updates. |
+| **Latest sync** | Timestamp of the last successful data pull. | Lets you confirm you’re looking at today’s sentiment—not last week’s. |
+| **Runs processed** | Number of ingestion jobs completed for the selected window. | Helps you spot if a scheduled pull failed or if multiple jobs are feeding the same readout. |
 
 ## Go deeper from here
 
