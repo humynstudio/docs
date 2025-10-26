@@ -3,55 +3,69 @@ title: "Metrics"
 description: "Translate Humyn signals into the numbers leaders expect"
 ---
 
-## What Metrics does
+## Why Metrics exists
 
-Metrics transforms the qualitative insights Humyn surfaces into <mark>lightweight KPIs</mark>. It gives founders, product, and GTM leaders a clear lens on how community sentiment and activation efforts are trending.
+Metrics turns Humyn’s qualitative signals into leader-ready scorecards. It gives you north-star indicators you can bring to board decks, roadmap reviews, and GTM readouts without guessing.
 
-<img
-  src="/assets/metrics-mockup.png"
-  alt="Humyn metrics mockup illustrating sentiment and volume trends"
-  style={{ borderRadius: "1rem", margin: "2rem 0", boxShadow: "0 20px 60px rgba(15, 23, 42, 0.16)" }}
-/>
+<Columns cols={2}>
+  <img
+    src="/assets/metrics-mockup.png"
+    alt="Humyn metrics mockup illustrating sentiment and volume trends"
+    style={{ borderRadius: "1rem", boxShadow: "0 24px 60px rgba(15, 23, 42, 0.16)" }}
+  />
+  <img
+    src="/screenshots/example_comment_analysis.png"
+    alt="Detailed metric view with qualitative drill-down"
+    style={{ borderRadius: "1rem", boxShadow: "0 24px 60px rgba(15, 23, 42, 0.16)" }}
+  />
+</Columns>
 
-![Metrics detail view](/screenshots/example_comment_analysis.png)
+## How it works
 
-The mockup above reflects how Humyn pairs qualitative signals with metric tiles:
+| Layer | What you see | Why you care |
+| --- | --- | --- |
+| KPI tiles | Volume, sentiment mix, blocker density, launch lift. | Gives execs a fast answer: are we trending the right way? |
+| Drill-down panels | Supporting quotes, theme clusters, audience breakdowns. | Pairs the metric with direct evidence so trust stays high. |
+| Alerts & trends | Threshold indicators and delta badges. | Surface inflection points before they become fire drills. |
 
-- **Conversation volume** visualizes the size of the dataset backing every insight.  
-- **Sentiment mix** shows the balance between praise, blockers, and questions so you can catch shifts instantly.  
-- **Theme drill-downs** surface underlying quotes, letting teams move from KPI to evidence in one click.
+## Build your Metric catalog
 
-## Starter metric catalog
+<Columns cols={2}>
+  <Card title="Choose the decisions" icon="flag">
+    Start with the questions leaders ask most: “Are launches moving the needle?”, “Where are we bleeding trust?”, “Which persona is surging?”
+  </Card>
+  <Card title="Define formulas" icon="calculator">
+    Document the numerator, denominator, and filters for each metric. Keep it down to 3–5 KPIs per initiative.
+  </Card>
+  <Card title="Assign owners & thresholds" icon="user-shield">
+    Clarify who watches each metric and when to raise a flag. Tie alerts to Slack or email so changes don’t get buried.
+  </Card>
+  <Card title="Link to evidence" icon="link">
+    Every tile should click through to Explore views or saved Hue prompts so teams can review the supporting quotes instantly.
+  </Card>
+</Columns>
 
-| Metric | Description | Source | Refresh |
+## Sample metric set
+
+| Metric | Formula | Refresh cadence | Primary consumer |
 | --- | --- | --- | --- |
-| Signal Volume | # of curated Reddit/Twitter/YouTube conversations this week. | Humyn ingestion | Daily |
-| Positive Momentum | % of comments tagged as “praise” or “adoption wins.” | Sentiment model | Daily |
-| Blocker Density | # of high-severity objections vs. total threads. | Manual + AI tags | Weekly |
-| Campaign Lift | Change in sentiment after a product launch or campaign. | Humyn + GTM data | Weekly |
+| Signal Volume | Count of new curated conversations (Reddit/Twitter/YouTube) this week. | Daily | Product leadership |
+| Positive Momentum | % of comments tagged “praise” or “adoption win.” | Daily | Exec updates |
+| Blocker Density | High-severity objections ÷ total threads. | Weekly | Support & Ops |
+| Launch Lift | Sentiment delta pre/post campaign. | Weekly | GTM & Marketing |
 
-## Set-up flow
+<Tip>
+Mirror these KPIs inside Slides, Notion, or Mode dashboards so execs see the same numbers everywhere.
+</Tip>
 
-1. Align on the decisions you want to influence (roadmap, messaging, GTM).  
-2. Define each metric’s formula, owner, and alert threshold.  
-3. Connect supplementary data sources (Mixpanel, HubSpot, Sheets) if you want blended views.  
-4. Mirror the metrics inside your dashboard tiles and executive reports.
+## Keep the system fresh
 
-## Best practices
+- Revisit formulas when you add a new persona, market, or product line.  
+- Time-box reviews with owners—weekly for volatile launches, monthly for steady-state products.  
+- Track a changelog of updates so your leadership team trusts the trend lines.
 
-- Keep the catalog short. Three to five high-signal metrics beat a 20-row spreadsheet.  
-- Pair every metric with a link to supporting quotes or threads in Explore.  
-- Tag metrics by initiative (e.g., “Onboarding”, “Pricing”, “GTM experiment”) to track impact.  
-- Publish a changelog so teams know when formulas or thresholds shift.
+## Pair Metrics with
 
-## When to iterate
-
-- You’re launching a new persona or market segment.  
-- Sentiment trends are shifting faster than your reporting cadence.  
-- Leadership requests a new view for board or investor updates.
-
-## Related workflows
-
-- Visualize the data on the [Dashboard](/core-features/dashboard).  
-- Investigate anomalies inside [Explore](/core-features/explore).  
-- Generate narrative-ready summaries with [Chat with Hue](/core-features/chat-with-hue).
+- The [Dashboard](/core-features/dashboard) for visual pulse checks.  
+- [Explore](/core-features/explore) to validate anomalies thread-by-thread.  
+- [Chat with Hue](/core-features/chat-with-hue) for narrative-ready summaries you can paste into updates.

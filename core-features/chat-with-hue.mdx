@@ -3,7 +3,18 @@ title: "Chat with Hue"
 description: "Ask natural-language questions and get instant answers from Humyn"
 ---
 
-![Chat with Hue conversation](/screenshots/hue_chat.png)
+<Columns cols={2}>
+  <img
+    src="/screenshots/hue_chat.png"
+    alt="Chat with Hue conversation showing summarized insight"
+    style={{ borderRadius: "1rem", boxShadow: "0 20px 60px rgba(15, 23, 42, 0.16)" }}
+  />
+  <img
+    src="/screenshots/source_citation.png"
+    alt="Chat with Hue citation panel showing linked source threads"
+    style={{ borderRadius: "1rem", boxShadow: "0 20px 60px rgba(15, 23, 42, 0.16)" }}
+  />
+</Columns>
 
 ## What Hue unlocks
 
@@ -26,41 +37,52 @@ Hue is your AI research partner. Instead of combing through dashboards, you can 
   </Card>
 </Columns>
 
+<Callout>
+Every answer includes inline highlights and a **Citations** panel so you can jump straight to the source threads without leaving the chat.
+</Callout>
+
 ## Prompt library by role
 
-### Product managers
+<Tabs>
+  <Tab title="Product managers">
+    <ul>
+      <li><strong>Summarize voices</strong> — “How do our power users describe the core job-to-be-done in this project?”</li>
+      <li><strong>Flag risks</strong> — “Which blockers are trending upward this week and why?”</li>
+      <li><strong>Compare competitors</strong> — “List the feature gaps customers mention most versus [competitor].”</li>
+      <li><strong>Justify roadmap</strong> — “Provide three quotes that support prioritizing [feature] next sprint.”</li>
+    </ul>
+  </Tab>
+  <Tab title="Product designers">
+    <ul>
+      <li><strong>Map emotions</strong> — “What sensory or emotional language do people use when they love or hate our workflow?”</li>
+      <li><strong>Spot friction</strong> — “Highlight onboarding steps that feel confusing or high effort.”</li>
+      <li><strong>Visualize success</strong> — “How do users describe the moment they know the product ‘clicked’?”</li>
+      <li><strong>Accessibility sweep</strong> — “Capture accessibility or usability pain points appearing most often.”</li>
+    </ul>
+  </Tab>
+  <Tab title="Investors & analysts">
+    <ul>
+      <li><strong>Pulse conviction</strong> — “What signals indicate growing enthusiasm vs. fatigue for this category?”</li>
+      <li><strong>Segment sentiment</strong> — “Compare how early adopters versus casual users frame our moat.”</li>
+      <li><strong>Benchmark winners</strong> — “Which adjacent products get cited as best-in-class, and why?”</li>
+      <li><strong>Surface catalysts</strong> — “Pull quotes that reveal purchase triggers or churn triggers.”</li>
+    </ul>
+  </Tab>
+  <Tab title="General operators">
+    <ul>
+      <li><strong>Track narratives</strong> — “How is the community talking about the broader cultural shift around this topic?”</li>
+      <li><strong>Find new ideas</strong> — “What fresh frameworks or keywords emerged this month?”</li>
+      <li><strong>Brief leadership</strong> — “Draft a three-bullet recap I can paste into Slack for executives.”</li>
+      <li><strong>Share TL;DR</strong> — “Turn today’s findings into a two-sentence summary for stakeholders.”</li>
+    </ul>
+  </Tab>
+</Tabs>
 
-- “Summarize how our power users describe the core job-to-be-done in this project.”  
-- “What launch risks or blocker themes are trending upward this week?”  
-- “List the competitor features customers wish we matched—and why.”  
-- “Give me three quotes that justify prioritizing [feature] in the next sprint.”  
+## Cultural and behavioral prompt packs
 
-### Product designers
+Use these packs when you need to understand the culture powering your audience, not just the sentiment.
 
-- “What sensory or emotional language do people use when they love or hate our workflow?”  
-- “Highlight onboarding moments that feel confusing or high effort.”  
-- “How do users visualize success with tools like ours—what metaphors do they lean on?”  
-- “Capture the accessibility or usability pain points appearing most often.”  
-
-### Investors & analysts
-
-- “What signals indicate growing enthusiasm vs. fatigue for this category?”  
-- “Compare how early adopters versus casual users frame our moat.”  
-- “Which adjacent products get cited as best-in-class, and for what reasons?”  
-- “Pull quotes that reveal purchase triggers or churn triggers.”  
-
-### General operators & storytellers
-
-- “How are community members talking about the broader cultural shift around this topic?”  
-- “What fresh ideas, frameworks, or jargon emerged this month?”  
-- “Draft a three-point recap I can paste into Slack for the leadership team.”  
-- “Turn today’s findings into a two-sentence TL;DR for stakeholders.”  
-
-## Cultural and behavioral deep-dive prompts
-
-Use these sets when you want to move beyond surface-level sentiment and understand the culture shaping your audience.
-
-### 🧠 Community psychology & identity
+### Community psychology & identity
 
 - “Describe the unspoken values or identity traits this community seems to share. What does belonging mean here?”  
 - “What emotions drive engagement in this space — pride, anxiety, curiosity, rebellion, etc.?”  
@@ -68,7 +90,7 @@ Use these sets when you want to move beyond surface-level sentiment and understa
 - “Summarize the archetypes that appear in this community — the mentor, skeptic, innovator, purist, etc.”  
 - “What recurring fears or insecurities show up in posts, even if not said outright?”  
 
-### 🔍 Behavior & rituals
+### Behavior & rituals
 
 - “What daily or weekly habits define active members of this community?”  
 - “Identify moments of initiation or status signaling — what actions make someone a ‘real’ member?”  
@@ -76,15 +98,15 @@ Use these sets when you want to move beyond surface-level sentiment and understa
 - “What are the community’s ‘sacred’ topics versus taboo or overdone ones?”  
 - “How do members celebrate success, and how do they handle failure or mistakes?”  
 
-### 📈 Trend & sentiment dynamics
+### Trend & sentiment dynamics
 
 - “What patterns of enthusiasm vs fatigue are emerging over time?”  
-- “Highlight new ideas, frameworks, or keywords gaining traction in the past 3 months.”  
+- “Highlight new ideas, frameworks, or keywords gaining traction in the past three months.”  
 - “Which topics generate the most heated debate — and why?”  
 - “Detect shifts in tone or mood that might signal cultural or product fatigue.”  
 - “Who or what is being positioned as ‘the next big thing,’ and who’s skeptical of it?”  
 
-### 🗣️ Influence & discourse
+### Influence & discourse
 
 - “Map the informal leaders or hubs of influence in this space — who shapes what others think?”  
 - “Compare how top posters and casual members frame the same topics differently.”  
@@ -92,7 +114,7 @@ Use these sets when you want to move beyond surface-level sentiment and understa
 - “Which users or subgroups challenge dominant opinions — and how does the community react?”  
 - “How does language evolve around influential moments or controversies?”  
 
-### 💬 Cultural signals & symbolism
+### Cultural signals & symbolism
 
 - “What symbols, memes, or metaphors repeatedly appear — and what do they represent culturally?”  
 - “How does this community’s slang reflect its worldview?”  
@@ -100,7 +122,7 @@ Use these sets when you want to move beyond surface-level sentiment and understa
 - “If this community were a person, what would their personality and worldview be?”  
 - “What aesthetic or visual markers show group belonging (colors, emojis, formatting, tone)?”  
 
-### 💡 Opportunity & insight extraction
+### Opportunity & insight extraction
 
 - “What unmet needs or frustrations appear frequently but without clear solutions?”  
 - “Which products, brands, or ideas are consistently mentioned with trust — or disdain?”  

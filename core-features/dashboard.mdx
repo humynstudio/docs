@@ -3,39 +3,54 @@ title: "Dashboard"
 description: "Command center for scanning Humyn signals at a glance"
 ---
 
-![Humyn dashboard overview](/screenshots/project_dashboard.png)
+<img
+  src="/screenshots/project_dashboard.png"
+  alt="Humyn dashboard overview"
+  style={{ borderRadius: "1rem", marginBottom: "2rem", boxShadow: "0 28px 70px rgba(15, 23, 42, 0.18)" }}
+/>
 
-## Why it matters
+## What the dashboard delivers
 
-The dashboard is the first stop for founders and operators who want a pulse on what communities are saying. It bundles trending themes, sentiment shifts, and standout quotes so you can sync with stakeholders in minutes—not hours.
+The Dashboard is your living status page for community signal. Instead of hopping between Explore, exports, or Slack threads, every spike, sentiment shift, and winning quote meets you here.
 
-## Core tiles
+<Columns cols={2}>
+  <Card title="Know the pulse" icon="wave-pulse">
+    Spot volume swings, trending themes, and tone changes across Reddit, Twitter, and YouTube at a glance.
+  </Card>
+  <Card title="Share in seconds" icon="share-nodes">
+    Capture the top quotes and visual tiles you need for stand-ups, investor updates, and research recaps.
+  </Card>
+</Columns>
 
-- **Conversation Volume:** Track how many Reddit threads, tweets, and comments Humyn ingested over your selected window.  
-- **Theme Momentum:** Surface the topics that are accelerating or cooling week over week.  
-- **Signal Mix:** Understand the balance between praise, questions, pain points, and objections.  
-- **Quote Highlights:** Pin community statements that deserve airtime in your next share-out.
+## Tile anatomy
 
-## Working the dashboard
+| Tile | Use it to | Why it matters |
+| --- | --- | --- |
+| **Conversation Volume** | Validate the sample size behind your weekly readout. | Helps leaders see the dataset before they see the conclusion. |
+| **Theme Momentum** | Track which topics accelerated, cooled, or emerged from nowhere. | Perfect for setting sprint priorities or campaign pivots. |
+| **Signal Mix** | Balance praise, blockers, questions, and objections. | Highlights when sentiment flips before dashboards catch up. |
+| **Quote Highlights** | Pin context-rich statements for storytelling. | Keeps roadmaps, briefs, and decks anchored in verbatim voice. |
 
-| Action | Result |
-| --- | --- |
-| Filter by community, persona, or time range | Zoom in on the audience that matters for today’s decision. |
-| Save a dashboard view | Create reusable presets for stand-ups, board updates, or launch retros. |
-| Export a snapshot | Drop PNGs or CSVs into decks, Notion pages, or investor updates. |
-| Schedule digest emails | Keep founders, GTM, and design in the loop automatically. |
+## How to work the Dashboard
 
-> **Operator tip:** Pair the dashboard with Slack digests so important spikes are impossible to miss.
+1. **Filter with intent.** Narrow by project, persona, or time range so you’re evaluating the exact audience and period that matters.  
+2. **Save reusable views.** Create presets like `Weekly Product Sync`, `Investor Digest`, or `Launch Retro` so every team stays aligned.  
+3. **Export and embed.** Drop PNG snapshots into slides or export CSVs for deeper analysis in Sheets or BI tools.  
+4. **Schedule digests.** Set up email or Slack summaries to broadcast key shifts automatically.
 
-## Keeping it trustworthy
+<Tip>
+Pair scheduled digests with a Slack channel like `#humyn-signal` so spikes never live in just one person’s head.
+</Tip>
 
-1. Assign an owner to review dashboard health weekly.  
-2. Audit sample threads to confirm sentiment and tagging accuracy.  
-3. Archive views that no longer drive decisions to keep things lightweight.  
-4. Record glossary definitions for theme names so teams stay aligned.
+## Keep it trustworthy
 
-## Related next steps
+- **Assign an owner.** Pick someone to review tile accuracy weekly and tune filters as projects evolve.  
+- **Spot-check sentiment.** Open sample threads from Quote Highlights to confirm the tone classification still holds.  
+- **Retire clutter.** Archive views that no longer drive decisions so teams focus on what matters.  
+- **Document your taxonomy.** Define theme names and tags in your internal wiki so everyone speaks the same language.
 
-- Build a measurement layer in [Metrics](/core-features/metrics).  
-- Dive deeper into raw conversations via [Explore](/core-features/explore).  
-- Ask follow-up questions with [Chat with Hue](/core-features/chat-with-hue).
+## Go deeper from here
+
+- Turn qualitative pulses into KPIs with [Metrics](/core-features/metrics).  
+- Investigate specific conversations inside [Explore](/core-features/explore).  
+- Ask follow-up questions or build personas directly in [Chat with Hue](/core-features/chat-with-hue).
